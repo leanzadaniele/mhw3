@@ -6,7 +6,7 @@ Daniele Leanza 1000001828
 ## recommendation - raccomandazione (How To Use)
 
 Italiano
-```bash
+```
    È necessario, affinchè si possa utilizzare appieno il progetto, 
    accedere al localhost passando per 127.0.0.1
    Questo è dovuto alle dure politiche di sicurezza dell'API di Dailymotion.
@@ -15,7 +15,7 @@ Italiano
 ```
 
 English
-```bash
+```
    It is necessary, in order for you to be completely able to use the project, 
    access to the localhost via 127.0.0.1
    It is due to the Dailymotion's restricted security policies.
