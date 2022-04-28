@@ -1,0 +1,277 @@
+.bgDiv{
+    background-color: #e5e5e5;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    transition: height 0.5s;
+    overflow-y: scroll;
+}
+
+footer{
+    padding-bottom: 70px;
+}
+.opened{
+    height: 100vh;
+}
+
+.info{
+    box-shadow: 0px -10px 10px rgba(0,0,0,.2);
+    background-color: #fff;
+    position: fixed;
+    bottom:0;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+
+.hiddenModal{
+    display: none !important;
+    pointer-events: none;
+}
+
+.hidden{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.noScroll{
+    overflow: hidden !important;
+}
+
+.info div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info div span p{
+
+}
+
+.info div span{
+    background-color: #24759d;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+
+.info div span:hover{
+    background-color: #3385ad;
+}
+
+/*----album----*/
+.alb_header{
+    display: flex;
+    position: sticky;
+    top:0;
+    background-color: #e5e5e5;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    align-items: center;
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.alb_header .hLeft{
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.alb_header h1{
+    margin: 0;
+    color: #4f4f4f;
+}
+
+.alb_header .search{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 100px;
+    justify-content: space-between;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    height: calc(40px - 10px);
+}
+
+.search input{
+    width: calc(100% - 10px);
+    outline: none;
+    font-size: 20px;
+    border: none;
+}
+
+
+.alb_header .close{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.close img{
+    width: 30px;
+    height: 30px;
+}
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px 10px 30px 10px;
+}
+
+.album a{
+    /*margin: 10px 10px 0 0;*/
+}
+
+
+
+.album img{
+    cursor: pointer;
+    width: 330px;
+    height: 216px;
+    object-fit: cover;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+
+/** ***** **** *** ** * EASTER EGG * ** *** **** ***** **/
+.smiley{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 100px;
+    margin:10px auto 40px auto;
+    height: 30px!important;
+    width: 30px!important;
+    background-color: transparent;
+}
+.eyes{
+    position: relative;
+    top:10px;
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.eye{
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.smiley:active .leftI{
+    height: 2px;
+    border-radius: 0;
+}
+
+.mouth{
+    position: relative;
+    top:13px;
+    background-color: #000;
+    border-radius:0 0 100px 100px;
+    width: 60%;
+    margin: 0 auto;
+    height: 10px;
+}
+
+#modal{
+    position:fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#modal .displayer{
+    padding:20px;
+    width: calc(70% - 40px);
+    height: 25%;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: rgba(0,0,0,.2);
+}
+
+#modal .displayer img{
+    width: 30%;
+    object-fit: cover;
+    height:100%;
+    border-radius: 20px;
+}
+
+#modal .displayer .placeDetails{
+    margin-left: 20px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#modal .displayer .placeDetails .videoLink {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #cecece;
+    padding:10px 0;
+    text-align: left;
+    font-size: 2em;
+}
+
+#close{
+    position: fixed;
+    top:20px;
+    right: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+
+}
+
+#close img{
+    width: 30px;
+}
+
+.videoLink a{
+    margin: 0;
+    width: max-content;
+    color:#24759d!important;
+    cursor: pointer;
+    text-decoration: underline;
+}
